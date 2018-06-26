@@ -1,0 +1,31 @@
+@import "/opt/lampp/htdocs/easyShop/src/sass/tools.scss";
+
+.navbar{
+    position: relative;
+}
+#title{
+    font-size: 35px;
+    font-family: 'IM Fell English SC';
+}
+#list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+#list li {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: 22px;
+    font-family: 'Nunito';
+}
+#login {
+    font-size: 42px;
+    color: white;
+    cursor: pointer;  
+}
+#notification {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
