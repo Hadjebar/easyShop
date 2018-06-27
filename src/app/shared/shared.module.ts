@@ -19,7 +19,7 @@ import { ArticleComponent } from './components/article/article.component';
     ContentMessageComponent,
     FooterComponent,
     NotFoundComponent,
-    ArticleComponent
+    ArticleComponent,
   ]
 })
 export class SharedModule { }

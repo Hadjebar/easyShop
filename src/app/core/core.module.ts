@@ -10,14 +10,16 @@ import { MagasinComponent } from './components/magasin/magasin.component';
 import { ActualiteComponent } from './components/actualite/actualite.component';
 import { CoreRoutingModule } from './coreRouting.module';
 import { RouterModule } from '@angular/router';
-
+import { SpeechRecognitionService } from './services/speech-recognition-service.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     ScrollToModule.forRoot(),
-    CoreRoutingModule
+    CoreRoutingModule,
+    FormsModule,
   ],
   declarations: [
     NavbarComponent,
@@ -25,6 +27,9 @@ import { RouterModule } from '@angular/router';
     ChatComponent,
     MagasinComponent,
     ActualiteComponent
+  ],
+  providers: [
+    SpeechRecognitionService,
   ],
   exports: [
     NavbarComponent,

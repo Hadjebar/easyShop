@@ -19,7 +19,7 @@ const routes: Routes = [
     },
     {
         path: 'actualite', component: ActualiteComponent
-    }
+    },
     {
         path: '**', component: NotFoundComponent
     }

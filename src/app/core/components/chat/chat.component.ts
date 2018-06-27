@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { SpeechRecognitionService } from './../../services/speech-recognition-service.service';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { message } from '../../../shared/models/message';
 
 @Component({
@@ -6,7 +7,7 @@ import { message } from '../../../shared/models/message';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.scss']
 })
-export class ChatComponent implements OnInit {
+export class ChatComponent implements OnInit, OnDestroy {
 
   formValue: string;
   messages: message[] = [
@@ -37,21 +38,52 @@ export class ChatComponent implements OnInit {
       sentBy: 'bot',
       avatar: 'http://placehold.it/50/55C1E7/fff&text=U',
       date : '14 janvier 2018',
-    },];
-  constructor() { }
+    }];
+  
+  speechData: string;
+  
+  constructor(private speechRecognitionService: SpeechRecognitionService) {
+    this.speechData = '';
+  }
 
   ngOnInit() {
   
   }
 
-  sendMessage(message: HTMLInputElement) {
+  ngOnDestroy() {
+    this.speechRecognitionService.DestroySpeechObject();
+  }
+
+  activateSpeechSearchMovie(): void {
+
+        this.speechRecognitionService.record()
+            .subscribe(
+            //listener
+            (value) => {
+                this.speechData = value;
+            },
+            //errror
+            (err) => {
+                console.log(err);
+                if (err.error == "no-speech") {
+                    this.activateSpeechSearchMovie();
+                }
+            },
+            //completion
+            () => {
+                this.activateSpeechSearchMovie();
+            });
+    }
+
+  sendMessage() {
     this.messages.push({
       user: 'Karim',
-      content: message.value,
+      content: this.speechData,
       sentBy: 'bot',
       avatar: 'http://placehold.it/50/55C1E7/fff&text=U',
       date : '14 janvier 2018',
     });
+    this.speechData = '';
   }
 
 }

@@ -10,14 +10,15 @@
    
   <div class="md-form inputMessage input-group mt-0 mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text"><i class="fi flaticon-talking"></i></span>
+      <span class="input-group-text"><i class="fi flaticon-send-message-button icon"></i></span>
     </div>
     <input type="text" class="form-control" 
            aria-label="Amount (to the nearest dollar)" 
-           (keyup.enter)="sendMessage(message)" #message
+           [(ngModel)]="speechData"
+           (keyup.enter)="sendMessage()"
            placeholder="Your message">
     <div class="input-group-append">
-      <span class="input-group-text"><i class="fi flaticon-communication"></i></span>
+      <span class="input-group-text"><i class="fi flaticon-microphone icon" (click)="activateSpeechSearchMovie()"></i></span>
     </div>
   </div>
   

@@ -19,28 +19,38 @@ text-transform: none;
 font-smoothing: antialiased;
 }
 
-.flaticon-talking:before { content: "\f100"; }
-.flaticon-communication:before { content: "\f101"; }
-.flaticon-notification-2:before { content: "\f102"; }
-.flaticon-notification-1:before { content: "\f103"; }
-.flaticon-notifications-button:before { content: "\f104"; }
-.flaticon-user-1:before { content: "\f105"; }
-.flaticon-man-user:before { content: "\f106"; }
-.flaticon-notification:before { content: "\f107"; }
-.flaticon-user:before { content: "\f108"; }
-.flaticon-user-avatar-main-picture:before { content: "\f109"; }
-.flaticon-menu-1:before { content: "\f10a"; }
-.flaticon-menu:before { content: "\f10b"; }
+.flaticon-send-message-button:before { content: "\f100"; }
+.flaticon-sent-mail:before { content: "\f101"; }
+.flaticon-mic-vintage-style:before { content: "\f102"; }
+.flaticon-microphone:before { content: "\f103"; }
+.flaticon-vintage-mic:before { content: "\f104"; }
+.flaticon-communication:before { content: "\f105"; }
+.flaticon-notification-2:before { content: "\f106"; }
+.flaticon-notification-1:before { content: "\f107"; }
+.flaticon-talking:before { content: "\f108"; }
+.flaticon-notification:before { content: "\f109"; }
+.flaticon-user-avatar-main-picture:before { content: "\f10a"; }
+.flaticon-menu-1:before { content: "\f10b"; }
+.flaticon-menu:before { content: "\f10c"; }
+.flaticon-user:before { content: "\f10d"; }
+.flaticon-man-user:before { content: "\f10e"; }
+.flaticon-notifications-button:before { content: "\f10f"; }
+.flaticon-user-1:before { content: "\f110"; }
 
-$font-Flaticon-talking: "\f100";
-$font-Flaticon-communication: "\f101";
-$font-Flaticon-notification-2: "\f102";
-$font-Flaticon-notification-1: "\f103";
-$font-Flaticon-notifications-button: "\f104";
-$font-Flaticon-user-1: "\f105";
-$font-Flaticon-man-user: "\f106";
-$font-Flaticon-notification: "\f107";
-$font-Flaticon-user: "\f108";
-$font-Flaticon-user-avatar-main-picture: "\f109";
-$font-Flaticon-menu-1: "\f10a";
-$font-Flaticon-menu: "\f10b";
+$font-Flaticon-send-message-button: "\f100";
+$font-Flaticon-sent-mail: "\f101";
+$font-Flaticon-mic-vintage-style: "\f102";
+$font-Flaticon-microphone: "\f103";
+$font-Flaticon-vintage-mic: "\f104";
+$font-Flaticon-communication: "\f105";
+$font-Flaticon-notification-2: "\f106";
+$font-Flaticon-notification-1: "\f107";
+$font-Flaticon-talking: "\f108";
+$font-Flaticon-notification: "\f109";
+$font-Flaticon-user-avatar-main-picture: "\f10a";
+$font-Flaticon-menu-1: "\f10b";
+$font-Flaticon-menu: "\f10c";
+$font-Flaticon-user: "\f10d";
+$font-Flaticon-man-user: "\f10e";
+$font-Flaticon-notifications-button: "\f10f";
+$font-Flaticon-user-1: "\f110";
