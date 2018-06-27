@@ -5,11 +5,37 @@
         <img id="imgCard" src="{{srcImg}}" class="img-fluid">
     </div>
     <div class="card-img-overlay d-flex justify-content-center align-items-center rgba-black-strong">
-        <div class="float-left">
-            <img id="Icon" src="{{srcIcon}}" class="img-fluid">
+        <div class="col-4 float-left">
+            <img id="icon" src="{{srcIcon}}" class="img-fluid rounded-circle z-depth-5">
         </div>
-        <div class="float-right">
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptate nulla harum dolorem minus officiis eum optio nostrum quibusdam, corporis quasi, vitae molestias tempore ea aspernatur ipsam eius sed est.</p>
+        <div class="col-8 float-right">
+            
+          <div class="jumbotron">
+              <h1 class="h1-reponsive mb-3 blue-text"><strong> Chatbot for sales </strong></h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                  to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger
+                  container.
+              </p>
+          </div>
+
+          <div class="text-center">
+              <button type="button" class="btn col-3 btn-info" id="btnChat" [ngx-scroll-to]="'chat'"> 
+                <i class="fi flaticon-communication iconChat"></i> Commencer </button>
+          </div>
+
         </div>
     </div>
-  </div>
+</div>
+
+<div class="container mb-2" id="chat">
+    <div class="col-3 float-left mt-5 rounded-circle">
+            <img id="imgChat" src="{{urlChat}}" class="img-fluid">
+    </div>
+    <div class="col-9 float-right">
+        <app-chat></app-chat>
+    </div>
+</div>
+
+<app-footer></app-footer>

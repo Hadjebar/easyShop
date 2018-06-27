@@ -1,0 +1,24 @@
+<div class="clearfix table-responsive">
+  <span class="chat-img" [ngClass]="{ 'mr-2 float-left': mes.sentBy === 'bot',
+                                      'ml-2 float-right':   mes.sentBy === 'user' }">
+    <img [src]="mes.avatar" alt="User Avatar" class="rounded-circle" [ngClass]="{ 'float-right': mes.sentBy === 'bot',
+                                                                                   'float-left':   mes.sentBy === 'user' }" />
+  </span>
+  <div class="chat-body">
+    <div class="header">
+        <small class=" text-muted" [ngClass]="{ 'float-right': mes.sentBy === 'bot',
+                                              'float-left':   mes.sentBy === 'user' }">
+            <span class="glyphicon glyphicon-time"></span>{{mes.date}}
+        </small>
+        <strong class="primary-font" [ngClass]="{ 'float-left': mes.sentBy === 'bot',
+                                                'float-right':   mes.sentBy === 'user' }">
+          {{mes.user}}
+        </strong>
+        <br>
+    </div>
+    <p [ngClass]="{ 'float-left': mes.sentBy === 'bot',
+                  'float-right':   mes.sentBy === 'user' }">
+        {{mes.content}}
+    </p>
+  </div>
+</div>

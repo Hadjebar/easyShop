@@ -1,4 +1,32 @@
+@import "/opt/lampp/htdocs/easyShop/src/sass/tools.scss";
+
 #imgCard{
-    height: 598px;
+    height: 678px;
     width: 1800px;
+}
+#imgChat{
+    height: 230px;
+    margin-top: 65%;
+}
+#icon{
+    font-size: 20px;
+}
+.jumbotron{
+    padding: 25px;
+}
+#btnChat{
+    font-size: 25px;
+    font-family: 'Nunito';
+    border-radius: 70px 70px 0px 70px;
+    padding: 6px;
+}
+.jumbotron{
+    border-radius: 70px 70px 0px 70px;
+}
+.iconChat{
+    font-size: 29px;
+    padding: 2px;
+}
+#chat{
+    height: 750px;
 }

@@ -1,0 +1,25 @@
+<h1 class="text-center blue-text">Discussion avec l'assistant </h1>
+<hr class="ligne">
+<div class="card p-4 col-10 rounded-2 chatbox m-4">
+  
+  <div class="messageContainer table-responsive" >
+    <ng-container *ngFor="let message of messages">
+      <app-content-message [message]='message' ></app-content-message>
+    </ng-container>
+  </div>
+   
+  <div class="md-form inputMessage input-group mt-0 mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text"><i class="fi flaticon-talking"></i></span>
+    </div>
+    <input type="text" class="form-control" 
+           aria-label="Amount (to the nearest dollar)" 
+           (keyup.enter)="sendMessage(message)" #message
+           placeholder="Your message">
+    <div class="input-group-append">
+      <span class="input-group-text"><i class="fi flaticon-communication"></i></span>
+    </div>
+  </div>
+  
+</div>
+<br>

@@ -1,0 +1,18 @@
+@import "/opt/lampp/htdocs/easyShop/src/sass/tools.scss";
+
+.ligne{
+    background-color: $ng-acceuil;
+    height: 1px;
+    margin-top: -5px;
+}
+
+.chatbox{
+    height: 600px;
+}
+.messageContainer{
+    height: 480px;   
+    padding: 5px;
+}
+.inputMessage{
+    margin: -5px;
+}

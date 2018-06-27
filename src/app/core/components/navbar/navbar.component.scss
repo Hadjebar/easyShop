@@ -1,8 +1,11 @@
 @import "/opt/lampp/htdocs/easyShop/src/sass/tools.scss";
 
-.navbar{
-    position: relative;
+.navbar-scroll {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $unique-color-dark;
 }
+
 #title{
     font-size: 35px;
     font-family: 'IM Fell English SC';
@@ -28,4 +31,8 @@
     font-size: 24px;
     color: white;
     cursor: pointer;
+}
+.active{
+    font-size: 26px;
+    font-style: italic;
 }
