@@ -65,4 +65,8 @@ export class SpeechRecognitionService {
             this.speechRecognition.stop();
     }
 
+    SpeechEnd():void {
+        this.speechRecognition.abort();
+    }
+
 }

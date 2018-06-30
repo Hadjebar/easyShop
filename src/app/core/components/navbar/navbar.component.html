@@ -27,8 +27,20 @@
     </ul>
 
     <div class="float-right">
-      <span class="fi flaticon-notification-2 mr-3" id="notification"></span>
-      <span class="fi flaticon-user mr-4" id="login"></span>
+      <span *ngIf="loggedIn" class="fi flaticon-notification-2 mr-3" id="notification"></span>
+
+      <div class="btn-group">
+          <span class="fi flaticon-user-1 mr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true" id="login"></span>
+          
+      
+          <div class="dropdown-menu">
+              <a *ngIf="!loggedIn" routerLink="/login" class="dropdown-item" href="#"><i class="fi flaticon-logout-2 icon"></i>LogIn</a>
+              <a *ngIf="loggedIn" class="dropdown-item" routerLink="/profil"> <i class="fi flaticon-user-avatar-main-picture icon"></i>Mon profil</a>
+              <a *ngIf="loggedIn" class="dropdown-item" routerLink="/utils" > <i class="fi flaticon-parameters icon"></i> Mes paramètres</a>
+              <div *ngIf="loggedIn" class="dropdown-divider"></div>
+              <a *ngIf="loggedIn" class="dropdown-item" (click)="logout($event)" > <i class="fi flaticon-logout icon"></i> LogOut</a>
+          </div>
+      </div>
     </div>
 
   </div>

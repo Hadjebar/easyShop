@@ -1,0 +1,73 @@
+<div class="card"  >
+    <!--Card image-->
+    <div class="view overlay img-fluid z-depth-2 rounded">
+        <img id="imgCard" src="{{srcImg}}" class="img-fluid">
+    </div>
+    <div class="card-img-overlay d-flex justify-content-center align-items-center rgba-black-strong">
+      <div class="card log col-lg-5 col-md-8 col-sm-9">
+          
+          <section  class="form-elegant d-flex justify-content-center">
+              <!--Form without header-->
+              <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+              <div class="col-lg-12 col-md-12 col-sm-10">
+                  <div class="card-body mx-2">
+  
+                      <!--Header -->
+                      <div class="text-center">
+                          <h3 class="dark-grey-text mb-2"><strong>Connexion</strong></h3>
+                      </div>
+  
+                      <div class="text-center mb-1 alert alert-danger" [hidden]="!error">
+                          {{error}}
+                      </div>
+  
+                      <form #loginForm=ngForm (ngSubmit)="onSubmit()">
+                          <!--Body-->
+                          <div class="row">
+                              <mat-form-field class="col-12">
+                                  <input type="email" name="email" 
+                                         matInput placeholder="Email" 
+                                         [(ngModel)]="form.email" required>
+                                  <i matSuffix class="fi flaticon-user-2 icon" ></i>
+                              </mat-form-field>
+                          </div>
+  
+                          <div class="row">
+                              <mat-form-field class="col-12">
+                                  <input type="password" name="password" 
+                                         matInput placeholder="Mot de passe" 
+                                         [(ngModel)]="form.password" required>
+                                  <i matSuffix class="fi flaticon-hanging-over-the-key icon" ></i>
+                              </mat-form-field>
+                              <p class="col font-small blue-text d-flex justify-content-end"><a href="#" class="blue-text ml-1"> Mot de passe oublié?</a></p>
+                          </div>
+  
+                          <div class="text-center mb-3">
+                              <button type="submit" [disabled]='!loginForm.valid'
+                                      class="btn btn-info btn-block btn-rounded z-depth-1a">
+                                      Se connecter
+                              </button>
+                          </div>
+  
+                          <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> Si tu n'est pas un préstataire tu peut connecter avec:</p>
+  
+                          <div class="row my-3 d-flex justify-content-center">
+                              <!--Facebook -->
+                              <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fi flaticon-facebook-2 blue-text text-center"></i></button>
+                              <!--Google -->
+                              <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fi flaticon-google-plus-1 red-text"></i></button>
+                          </div>
+                      </form>
+                  </div>
+                  
+                  <!--Footer-->
+                  <div class="modal-footer mx-5 pt-3 mb-1">
+                      <p class="font-small grey-text d-flex justify-content-end">Pas un membre ? <a routerLink="/logup" class="blue-text ml-1"> s'inscrire </a></p>
+                  </div>
+  
+              </div>
+              <!--/Form without header-->
+          </section>
+      </div>     
+    </div>
+  </div>

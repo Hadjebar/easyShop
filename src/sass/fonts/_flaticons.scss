@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .fi:before{
     display: inline-block;
 font-family: "Flaticon";
@@ -19,38 +20,80 @@ text-transform: none;
 font-smoothing: antialiased;
 }
 
-.flaticon-send-message-button:before { content: "\f100"; }
-.flaticon-sent-mail:before { content: "\f101"; }
-.flaticon-mic-vintage-style:before { content: "\f102"; }
-.flaticon-microphone:before { content: "\f103"; }
-.flaticon-vintage-mic:before { content: "\f104"; }
-.flaticon-communication:before { content: "\f105"; }
-.flaticon-notification-2:before { content: "\f106"; }
-.flaticon-notification-1:before { content: "\f107"; }
-.flaticon-talking:before { content: "\f108"; }
-.flaticon-notification:before { content: "\f109"; }
-.flaticon-user-avatar-main-picture:before { content: "\f10a"; }
-.flaticon-menu-1:before { content: "\f10b"; }
-.flaticon-menu:before { content: "\f10c"; }
-.flaticon-user:before { content: "\f10d"; }
-.flaticon-man-user:before { content: "\f10e"; }
-.flaticon-notifications-button:before { content: "\f10f"; }
-.flaticon-user-1:before { content: "\f110"; }
+.flaticon-gmail-3:before { content: "\f100"; }
+.flaticon-gmail-envelope:before { content: "\f101"; }
+.flaticon-gmail-2:before { content: "\f102"; }
+.flaticon-gmail-logo:before { content: "\f103"; }
+.flaticon-google-plus-1:before { content: "\f104"; }
+.flaticon-google-plus-logo-button:before { content: "\f105"; }
+.flaticon-facebook-logo-button:before { content: "\f106"; }
+.flaticon-twitter-1:before { content: "\f107"; }
+.flaticon-facebook-2:before { content: "\f108"; }
+.flaticon-facebook-logo:before { content: "\f109"; }
+.flaticon-lock:before { content: "\f10a"; }
+.flaticon-favorite-heart-button:before { content: "\f10b"; }
+.flaticon-star:before { content: "\f10c"; }
+.flaticon-magic-wand:before { content: "\f10d"; }
+.flaticon-light-bulb:before { content: "\f10e"; }
+.flaticon-wiping-utensils-of-bathroom:before { content: "\f10f"; }
+.flaticon-parameters:before { content: "\f110"; }
+.flaticon-logout-2:before { content: "\f111"; }
+.flaticon-logout-1:before { content: "\f112"; }
+.flaticon-login:before { content: "\f113"; }
+.flaticon-logout:before { content: "\f114"; }
+.flaticon-send-message-button:before { content: "\f115"; }
+.flaticon-mic-vintage-style:before { content: "\f116"; }
+.flaticon-notifications-button:before { content: "\f117"; }
+.flaticon-user-avatar-main-picture:before { content: "\f118"; }
+.flaticon-sent-mail:before { content: "\f119"; }
+.flaticon-man-user:before { content: "\f11a"; }
+.flaticon-microphone:before { content: "\f11b"; }
+.flaticon-vintage-mic:before { content: "\f11c"; }
+.flaticon-communication:before { content: "\f11d"; }
+.flaticon-menu:before { content: "\f11e"; }
+.flaticon-user-1:before { content: "\f11f"; }
+.flaticon-notification-2:before { content: "\f120"; }
+.flaticon-talking:before { content: "\f121"; }
+.flaticon-notification-1:before { content: "\f122"; }
+.flaticon-notification:before { content: "\f123"; }
+.flaticon-user:before { content: "\f124"; }
+.flaticon-menu-1:before { content: "\f125"; }
 
-$font-Flaticon-send-message-button: "\f100";
-$font-Flaticon-sent-mail: "\f101";
-$font-Flaticon-mic-vintage-style: "\f102";
-$font-Flaticon-microphone: "\f103";
-$font-Flaticon-vintage-mic: "\f104";
-$font-Flaticon-communication: "\f105";
-$font-Flaticon-notification-2: "\f106";
-$font-Flaticon-notification-1: "\f107";
-$font-Flaticon-talking: "\f108";
-$font-Flaticon-notification: "\f109";
-$font-Flaticon-user-avatar-main-picture: "\f10a";
-$font-Flaticon-menu-1: "\f10b";
-$font-Flaticon-menu: "\f10c";
-$font-Flaticon-user: "\f10d";
-$font-Flaticon-man-user: "\f10e";
-$font-Flaticon-notifications-button: "\f10f";
-$font-Flaticon-user-1: "\f110";
+$font-Flaticon-gmail-3: "\f100";
+$font-Flaticon-gmail-envelope: "\f101";
+$font-Flaticon-gmail-2: "\f102";
+$font-Flaticon-gmail-logo: "\f103";
+$font-Flaticon-google-plus-1: "\f104";
+$font-Flaticon-google-plus-logo-button: "\f105";
+$font-Flaticon-facebook-logo-button: "\f106";
+$font-Flaticon-twitter-1: "\f107";
+$font-Flaticon-facebook-2: "\f108";
+$font-Flaticon-facebook-logo: "\f109";
+$font-Flaticon-lock: "\f10a";
+$font-Flaticon-favorite-heart-button: "\f10b";
+$font-Flaticon-star: "\f10c";
+$font-Flaticon-magic-wand: "\f10d";
+$font-Flaticon-light-bulb: "\f10e";
+$font-Flaticon-wiping-utensils-of-bathroom: "\f10f";
+$font-Flaticon-parameters: "\f110";
+$font-Flaticon-logout-2: "\f111";
+$font-Flaticon-logout-1: "\f112";
+$font-Flaticon-login: "\f113";
+$font-Flaticon-logout: "\f114";
+$font-Flaticon-send-message-button: "\f115";
+$font-Flaticon-mic-vintage-style: "\f116";
+$font-Flaticon-notifications-button: "\f117";
+$font-Flaticon-user-avatar-main-picture: "\f118";
+$font-Flaticon-sent-mail: "\f119";
+$font-Flaticon-man-user: "\f11a";
+$font-Flaticon-microphone: "\f11b";
+$font-Flaticon-vintage-mic: "\f11c";
+$font-Flaticon-communication: "\f11d";
+$font-Flaticon-menu: "\f11e";
+$font-Flaticon-user-1: "\f11f";
+$font-Flaticon-notification-2: "\f120";
+$font-Flaticon-talking: "\f121";
+$font-Flaticon-notification-1: "\f122";
+$font-Flaticon-notification: "\f123";
+$font-Flaticon-user: "\f124";
+$font-Flaticon-menu-1: "\f125";

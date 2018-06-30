@@ -36,3 +36,20 @@
     font-size: 26px;
     font-style: italic;
 }
+.dropdown-toggle::after {
+    border-right: none !important;
+    border-top: none !important;
+}
+.navbar .dropdown-menu{
+    margin-left: -152px !important;
+    margin-top: -10px !important; 
+    border-radius: 30px 00px 20px 30px;
+}
+
+.icon{
+    font-size: 28px;
+    margin-right: 15px;
+}
+.dropdown-item{
+    font-family: 'Nunito';
+}

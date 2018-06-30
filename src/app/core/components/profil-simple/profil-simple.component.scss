@@ -1,0 +1,45 @@
+@import "/opt/lampp/htdocs/easyShop/src/sass/tools.scss";
+.contenetCompte{
+    margin-top: 95px;
+    position: absolute;
+}
+.nabVertical{
+    margin-top: -15px;
+    margin-left: -32px;
+    height: 400px;
+}
+.nav{
+    height: 610px;
+}
+.sticky-top{
+    top: 85px;
+}
+.nav-link{
+    font-family: 'Nunito';
+    font-size: 26px;
+    color: black;
+}
+.icon{
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.bloc{
+    height: 680px;
+    
+}
+#favouris{
+    font-family: 'IM Fell English SC';
+}
+#notification{
+    font-family: 'IM Fell English SC';
+}
+#parametre{
+    font-family: 'IM Fell English SC';
+}
+
+.ligne{
+    background-color: $ng-acceuil;
+    height: 1px;
+    margin-top: 1px;
+}

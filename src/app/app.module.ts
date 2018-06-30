@@ -1,3 +1,4 @@
+
 import { AcceuilComponent } from './core/components/acceuil/acceuil.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
@@ -16,8 +17,10 @@ import { RouterModule } from '@angular/router';
     CoreModule,
     SharedModule,
     RouterModule.forRoot([
-      { path: '', component: AcceuilComponent },
-      
+      { 
+        path: '', 
+        component: AcceuilComponent 
+      },
     ]),
   ],
   providers: [],

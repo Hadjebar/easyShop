@@ -1,0 +1,16 @@
+<div *ngFor="let fav of favouris" class="col-11 text-center mb-4 ">
+  <div class="card d-flex justify-content-end">
+    <div class="row">
+        <img [src]="fav.img" class="img-fluid imgInfo" alt="">
+        <div class="col">
+          <div class="card-body">
+              <div class="card-title text-left">
+                  {{fav.title}}  
+              </div>
+              <div class="card-text text-left table-responsive">
+                {{fav.description}}
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
